@@ -33,5 +33,5 @@ Thanks for taking a look at my solution to this front-end coding challenge.
 ## Author
 
 - Website - [Hermann MOUSSAVOU](https://hermann-moussavou.com)
-- Frontend Mentor - [](https://www.frontendmentor.io/profile/Chermann-KING)
-- LinkedIn - [](https://www.linkedin.com/in/hermann-moussavou)
+- Frontend Mentor - [Chermann KING](https://www.frontendmentor.io/profile/Chermann-KING)
+- LinkedIn - [Hermann MOUSSAVOU](https://www.linkedin.com/in/hermann-moussavou)
