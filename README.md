@@ -16,12 +16,12 @@ Thanks for taking a look at my solution to this front-end coding challenge.
 
 ### Screenshot
 
-![](PRINTSCREEN_PROJECT)
+![](./images/intro-component-with-sign-up-form-printscreen.png)
 
 ### Links
 
 - Solution URL: https://github.com/Chermann-KING/intro_component_with_signup_form---NEWBIE
-- Live Site URL: LIVE_URL
+- Live Site URL: https://chermann-king.github.io/intro_component_with_signup_form---NEWBIE/
 
 ### Built with
 
