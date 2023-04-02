@@ -28,6 +28,7 @@ Thanks for taking a look at my solution to this front-end coding challenge.
 - Semantic HTML5 markup
 - CSS custom properties
 - Mobile-first workflow
+- Client Side validation using JS
 
 ## Author
 
