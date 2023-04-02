@@ -224,3 +224,16 @@ main .infos-subscription form p > a {
   color: var(--red);
   font-weight: var(--fontWeight7);
 }
+
+footer {
+  text-align: center;
+  padding: 1rem 2.6rem;
+}
+footer p a {
+  color: var(--blue);
+  font-weight: var(--fontWeight6);
+  transition: all 0.2s ease;
+}
+footer p a:hover {
+  color: var(--darkBlue);
+}
