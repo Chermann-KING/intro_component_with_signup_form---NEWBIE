@@ -214,3 +214,13 @@ main .infos-subscription form button {
 main .infos-subscription form button:hover {
   background-color: var(--greenAlpha);
 }
+
+main .infos-subscription p:last-of-type {
+  color: var(--grayishBlue);
+  font-size: calc(var(--fontSize) * 0.68);
+  padding: 0 calc(var(--padding) * 3);
+}
+main .infos-subscription form p > a {
+  color: var(--red);
+  font-weight: var(--fontWeight7);
+}
