@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  /* LAYOUT */
+  --mobile: 375px;
+  --desktop: 1440px;
+
+  /* COLORS */
+  /* Primary */
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --greenAlpha: hsla(154, 59%, 51%, 0.8);
+  --greenShadow: hsl(154, 57%, 46%);
+  --white: hsl(0, 0%, 100%);
+  /* Accent */
+  --blue: hsl(248, 32%, 49%);
+  /* Neutral */
+  --darkBlue: hsl(249, 10%, 26%);
+  --grayishBlue: hsl(246, 25%, 77%);
+
+  /* TYPOGRAPHY */
+  --fontFamily: "Poppins", sans-serif;
+
+  --fontSize: 1rem;
+
+  --fontWeight4: 400;
+  --fontWeight5: 500;
+  --fontWeight6: 600;
+  --fontWeight7: 700;
+
+  /* SPACING & BORDER-RADIUS*/
+  --margin: 1rem;
+  --padding: 1rem;
+  --borderRadius: 1rem;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 0.3rem;
+  background: var(--grayishBlue);
+  /* display: none; */
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--red);
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--red);
+  width: 5px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--darkBlue);
+}
+/* END SCROLLBAR */
+
+body {
+  font-family: var(--fontFamily);
+  font-size: var(--fontSize);
+  font-weight: var(--fontWeight4);
+  color: var(--white);
+  background-image: url("./images/bg-intro-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: var(--red);
+}
+main {
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main .infos-texts {
+  width: 327px;
+  height: 226px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main .infos-texts h1 {
+  line-height: 1.5;
+  font-size: calc(var(--fontSize) * 1.75);
+}
+main .infos-texts p {
+  line-height: normal;
+}
+main .infos-subscription {
+  width: 327px;
+  height: 556px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+main .infos-subscription .plan {
+  width: 100%;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  background-color: var(--blue);
+  border-radius: calc(var(--borderRadius) * 0.625);
+  box-shadow: 0px 6px 2px 0px rgba(0, 0, 0, 0.3);
+}
+main .infos-subscription .plan h2 {
+  font-size: calc(var(--fontSize) * 0.94);
+  padding: 0 calc(var(--padding) * 3);
+  font-weight: var(--fontWeight4);
+}
+main .infos-subscription .plan h2 span {
+  font-weight: var(--fontWeight7);
+}
+
+main .infos-subscription form {
+  width: 100%;
+  height: 442px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--white);
+  border-radius: calc(var(--borderRadius) * 0.625);
+  box-shadow: 0px 6px 2px 0px rgba(0, 0, 0, 0.3);
+}
+main .infos-subscription form .inputs-list {
+  height: 274px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main .infos-subscription form .input-container {
+  width: 279px;
+  text-align: right;
+}
+
+main .infos-subscription form .input-container .input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--padding);
+  border: 1.6px solid var(--grayishBlue);
+  border-radius: calc(var(--borderRadius) * 0.625);
+}
+main .infos-subscription form .input-container .input-wrap input {
+  width: 100%;
+  height: 56px;
+  color: var(--darkBlue);
+  font-weight: var(--fontWeight7);
+  border: none;
+  outline: none;
+  border-radius: calc(var(--borderRadius) * 0.625);
+}
+::placeholder {
+  color: var(--grayishBlue);
+  font-weight: var(--fontWeight6);
+}
+
+main .infos-subscription form .input-container .input-wrap:focus-within {
+  border-color: var(--blue);
+}
+
+main .infos-subscription form .input-container .input-wrap > img {
+  display: none;
+}
+
+main .infos-subscription form .input-container .validation {
+  display: none;
+  color: var(--red);
+  font-size: calc(var(--fontSize) * 0.68);
+  font-style: italic;
+  padding-right: calc(var(--padding) * 0.2);
+}
+.input-error {
+  border-color: var(--red);
+}
+
+main .infos-subscription form button {
+  cursor: pointer;
+  width: 276px;
+  height: 56px;
+  color: var(--white);
+  font-size: calc(var(--fontSize) * 0.94);
+  font-weight: var(--fontWeight6);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+
+  border: none;
+  border-radius: calc(var(--borderRadius) * 0.625);
+  background-color: var(--green);
+  box-shadow: 0px 6px 2px 0px var(--greenShadow);
+  transition: all 0.2s ease-in-out;
+}
+main .infos-subscription form button:hover {
+  background-color: var(--greenAlpha);
+}
+
+main .infos-subscription p:last-of-type {
+  color: var(--grayishBlue);
+  font-size: calc(var(--fontSize) * 0.68);
+  padding: 0 calc(var(--padding) * 3);
+}
+main .infos-subscription form p > a {
+  color: var(--red);
+  font-weight: var(--fontWeight7);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 2.6rem;
+}
+footer p a {
+  color: var(--blue);
+  font-weight: var(--fontWeight6);
+  transition: all 0.2s ease;
+}
+footer p a:hover {
+  color: var(--darkBlue);
+}
+
+/* For devices other than mobile phone*/
+@media (min-width: 776px) {
+  body {
+    background-image: url("./images/bg-intro-desktop.png");
+  }
+  main {
+    height: 100vh;
+    flex-direction: row;
+  }
+  main .infos-texts {
+    width: 525px;
+    height: 220px;
+    text-align: left;
+  }
+  main .infos-texts h1 {
+    line-height: 1.2;
+    font-size: calc(var(--fontSize) * 3.125);
+  }
+  main .infos-subscription {
+    width: 540px;
+    height: 562px;
+    /* height: 650px; */
+  }
+  main .infos-subscription .plan {
+    height: 60px;
+  }
+  main .infos-subscription .plan h2 {
+    margin: 0 auto;
+  }
+  main .infos-subscription form {
+    width: 100%;
+    height: 474px;
+    /* height: 562px; */
+  }
+  main .infos-subscription form .inputs-list {
+    height: 285px;
+    /* height: 372px; */
+  }
+  main .infos-subscription form .input-container {
+    width: 460px;
+  }
+  main .infos-subscription form button {
+    width: 460px;
+  }
+}
