@@ -76,3 +76,28 @@ body {
   background-position: center center;
   background-color: var(--red);
 }
+main {
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main .infos-texts {
+  width: 327px;
+  height: 226px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main .infos-texts h1 {
+  line-height: 1.5;
+  font-size: calc(var(--fontSize) * 1.75);
+}
+main .infos-texts p {
+  line-height: normal;
+}
