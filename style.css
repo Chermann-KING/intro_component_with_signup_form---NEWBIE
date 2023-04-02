@@ -9,6 +9,7 @@
   /* Primary */
   --red: hsl(0, 100%, 74%);
   --green: hsl(154, 59%, 51%);
+  --greenAlpha: hsla(154, 59%, 51%, 0.8);
   --greenShadow: hsl(154, 57%, 46%);
   --white: hsl(0, 0%, 100%);
   /* Accent */
@@ -236,4 +237,50 @@ footer p a {
 }
 footer p a:hover {
   color: var(--darkBlue);
+}
+
+/* For devices other than mobile phone*/
+@media (min-width: 776px) {
+  body {
+    background-image: url("./images/bg-intro-desktop.png");
+  }
+  main {
+    height: 100vh;
+    flex-direction: row;
+  }
+  main .infos-texts {
+    width: 525px;
+    height: 220px;
+    text-align: left;
+  }
+  main .infos-texts h1 {
+    line-height: 1.2;
+    font-size: calc(var(--fontSize) * 3.125);
+  }
+  main .infos-subscription {
+    width: 540px;
+    height: 562px;
+    /* height: 650px; */
+  }
+  main .infos-subscription .plan {
+    height: 60px;
+  }
+  main .infos-subscription .plan h2 {
+    margin: 0 auto;
+  }
+  main .infos-subscription form {
+    width: 100%;
+    height: 474px;
+    /* height: 562px; */
+  }
+  main .infos-subscription form .inputs-list {
+    height: 285px;
+    /* height: 372px; */
+  }
+  main .infos-subscription form .input-container {
+    width: 460px;
+  }
+  main .infos-subscription form button {
+    width: 460px;
+  }
 }
